@@ -1,0 +1,854 @@
+*{
+    border: none;
+    margin: none;
+    padding: none;
+}
+.navigation {
+    height: 60px;
+    background: linear-gradient(to right, #014335, #036344); /* Left to right gradient */
+    display: flex; /* Enable flexbox */
+    justify-content: space-evenly; /* Equal spacing between items */
+    align-items: center; /* Center items vertically */
+    padding: 0 10px; /* Add padding */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    border: none;
+}
+
+ .border {
+    border: 1.5px solid transparent; /* Always reserve space for the border */
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    
+}
+
+.border:hover {
+    border-color: #fff; /* Change border color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add slight background effect */
+}
+ .nav-logo{
+    width: 113px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+ }
+ .amazon-logo{
+    width: 100px;
+    height: 50px;
+    display: flex;
+ }
+ .address{
+    width: 95px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+ }
+ .address-location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 95px;
+    height: 50px;
+    padding-left: 10px;
+    
+    
+}
+
+.fa-location-dot {
+    font-size: 17px; /* Adjust icon size */
+    color: #fff;
+    padding: 4px 0px 0px;
+}
+
+.delivery,
+.country {
+    display: block;
+    line-height: 1; /* Aligns text properly */
+    font-family: Arial;
+}
+
+.delivery {
+    font-size: 12px; /* Adjust size for "Delivery to" */
+    margin-bottom: -5px; /* Slight overlap for alignment */
+    color: #cccc;
+}
+
+.country {
+    font-size: 14px; /* Larger size for "Pakistan" */
+    font-weight: bold;
+    color:white;
+    margin-top: 5px;
+}
+.finding {
+    width: 700px;
+    height: 60px;
+    display: flex; /* Arrange child divs in a row */
+    align-items: center; /* Vertically align items */
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+    
+}
+.finding-container {
+    display: flex;
+    width: 100%;
+    height: 40px; /* Match the height of its children */
+    border-radius: 3px; /* Add rounded corners to the entire group */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border: 1px solid transparent; /* Transparent border for smooth hover transition */
+    position: relative; /* Ensure the glowing border is positioned correctly */
+    
+}
+
+.finding-container:hover {
+   
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); /* More visible shadow */
+
+}
+.finding-container:focus-within {
+    box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.9); /* Glowing effect */
+    border-radius: 3px; /* Add slight rounding to match child elements */
+}
+
+
+.select {
+    width: 55px;
+    height: 40px;
+    background-color: #e6e6e6;
+    padding: 0 0 0 5px; /* Padding as specified */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    box-sizing: border-box;
+    border-top-left-radius: 3px; /* Top-left curve */
+    border-bottom-left-radius: 3px; /* Bottom-left curve */
+    transition: color 0.3s ease; /* Smooth color transition */
+   
+    
+}
+.select:hover {
+    background-color: #D4D4D4; /* Change icon color on hover */
+
+}
+
+
+.select select {
+    width: 52px; /* Width for the dropdown options */
+    height: 40px; /* Height for the dropdown options */
+    background-color: #e6e6e6;
+    border: none; /* Remove border */
+    font-size: 14px;
+    text-align: center; /* Center align the text */
+    box-sizing: border-box;
+    transition: color 0.3s ease; /* Smooth color transition */
+
+}
+.select select:hover {
+    background-color: #D4D4D4; /* Change icon color on hover */
+
+}
+
+
+.search {
+    flex: 1; /* Fill remaining space between select and search-icon */
+    height: 40px;
+    background-color: #fff; /* Optional: white background */
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* Add padding for spacing inside */
+    box-sizing: border-box;
+}
+.search input {
+    font-size: 16px; /* Adjust font size for input text */
+    height: 100%; /* Ensure full height usage */
+    width: 100%; /* Ensure full width usage */
+    padding: 0 10px; /* Padding inside the input box */
+    box-sizing: border-box;
+    border: none;
+    outline : none;
+
+}
+
+.search input::placeholder {
+    font-size: 14px; /* Adjust placeholder text size */
+    color: #999; /* Optional: Change placeholder color */
+}
+
+
+.search-icon {
+    width: 45px;
+    height: 40px;
+    background-color: purple;
+    color: #fff; /* White icon color */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the search icon */
+    cursor: pointer;
+    font-size: 20px; /* Adjust icon size */
+    border-top-right-radius: 3px; /* Top-right curve */
+    border-bottom-right-radius: 3px; /* Bottom-right curve */
+    transition: color 0.3s ease; /* Smooth color transition */
+    
+    
+}
+.search-icon:hover {
+    background-color: #7F1153; /* Change icon color on hover */
+
+}
+.language-selector  {
+    width: 75px;
+    position: relative;
+    cursor: pointer;  
+    border: 1px transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.selected-language {
+    display: flex;
+    width: 70px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.selected-language .flag {
+    width: 20px;
+    height: 15px;
+}
+
+/* Initially hide the dropdown */
+.language-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.language-selector:hover .language-options {
+    display: block; /* Display the dropdown on hover */
+    width: 130px;
+}
+
+.language-options li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-options li:hover {
+    background-color: #f0f0f0;
+}
+
+.language-options .flag {
+    width: 20px;
+    height: 15px;
+}
+.language-code{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.sign-list {
+    width: 125px;
+    height: 50px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Align text to the left */
+    justify-content: center; /* Center content vertically */
+    
+}
+
+.sign-in {
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 25px;
+     
+}
+
+.account-lists {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 3px;
+}
+.return-order {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Align text to the left */
+    justify-content: center; /* Center content vertically */
+    
+}
+
+.return-text {
+    font-size: 12px; /* Smaller size for "Return" */
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 10px;
+    
+}
+
+.order-text {
+    font-size: 16px; /* Larger size for "& Order" */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cart-box {
+    width: 100px;
+    height: 50px;
+    display: flex; /* Arrange icon and text in a row */
+    align-items: center; /* Center icon and text vertically */
+    justify-content: flex-start; /* Align items to the left */
+    padding-left: 10px; /* Add some spacing on the left */
+    gap: 10px; /* Add spacing between the icon and text */
+}
+
+.cart-box i {
+    font-size: 35px; /* Icon size */
+    color: #fff; /* Icon color */
+}
+
+.cart-text {
+    font-size: 15px; /* Text size */
+    color: #fff; /* Text color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; /* Bold text for emphasis */
+}
+.panel{
+    height: 40px;
+    background-color: #085749;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.panel-all{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 50px;
+    padding-left: 3px;
+}
+.panel-options {
+    width: 80%;
+    display: flex; /* Align spans in a row */
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Align spans to the left */
+    gap: 10px; /* Add spacing between spans */
+    padding-left: 10px; /* Add padding to the left of the main div */
+    height: 40px; /* Match height for alignment */
+}
+
+.panel-options1 {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    height: 40px; /* Set height for spans */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    padding: 0 10px; /* Add horizontal padding for text spacing */
+    white-space: nowrap; /* Prevent text wrapping */
+    border: 1.5px solid transparent; /* Initial border (invisible) */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.panel-options1:hover {
+    border-color: #fff; /* Add visible border on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add slight background effect */
+}
+
+.panel{
+    color: #fff;
+}
+.panel-deals {
+    display: flex; /* Flexbox to center-align content */
+    align-items: center; /* Vertically center-align the text */
+    justify-content: flex-start; /* Align content to the left */
+    font-size: 14px; /* Adjust font size */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    height: 38px; /* Set height for the div */
+    padding: 0 10px; /* Add horizontal padding for spacing */
+    white-space: nowrap; /* Prevent text wrapping */
+    border: 1.5px solid transparent; /* Initial border (invisible) */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.panel-deals:hover {
+    border-color: #fff; /* Add visible white border on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add slight background effect */
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slider Container */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slides Wrapper */
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Each Slide */
+.slide {
+    min-width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Arrow Container */
+.arrow-container {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents overlap issues */
+}
+
+/* Arrow Box */
+.arrow-box {
+    width: 85px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none; /* Default no border */
+    pointer-events: all;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.left-arrow-box {
+    position: absolute;
+    left: 0;
+}
+
+.right-arrow-box {
+    position: absolute;
+    right: 0;
+}
+
+/* Arrow Style */
+.arrow {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+}
+
+/* Hover & Click Effect */
+.arrow-box:active {
+    border: 2px solid white;
+    
+}
+
+header, .hero {
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.arows{
+    width: 84px;
+    height: 250px;
+}
+.evenly-spaced-container {
+    position: absolute;
+    top: 250px; 
+    width: calc(100% - 20px); /* Adjust for 10px padding on both sides */
+    padding: 0 10px; /* Add 10px padding on the left and right */
+    display: flex;
+    justify-content: space-between; /* Ensure even spacing between boxes */
+    align-items: center; /* Align items vertically */
+    z-index: 2; /* Ensure visibility above slider */
+}
+
+
+
+.box {
+    width: 340px;
+    height: 380px;
+    background-color: #ffff; /* Background color for the box */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items:start;
+    box-sizing: border-box; /* Ensures accurate dimensions */
+    padding: 0px 20px; /* Internal padding for content */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box-heading {
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: start;
+    color: black; /* Darker text color */
+    
+}
+
+.box-image {
+    width: 100%; /* Full width of the box */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensures proper image scaling */
+    
+    
+    
+}
+
+.shop-now-btn {
+    font-size: 13px;
+    color: #007185;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Space above the button */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.shop-now-btn:hover {
+    color: red; /* Darker shade on hover */
+}
+.box-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px; /* Space between grid items */
+    width: 100%;
+    height: 250px;
+}
+
+.box-image-grid div {
+    display: flex;
+    flex-direction: column; /* Stack image and link */
+   
+    
+}
+
+.box-image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the grid cells */
+    
+}
+
+.box-image-grid a {
+    font-size: 13px;
+    color: #0f1111;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.box-image-grid a:hover {
+    color: red; /* Change text color on hover */
+}
+.second-row{
+    padding: 0 10px; /* Add 10px padding on the left and right */
+    height: 430px;
+    background-color: #E3E6E6;
+    display: flex;
+    padding-top: 50px;
+    width: calc(100% - 20px); /* Adjust for 10px padding on both sides */
+
+    
+}
+/* First Part */
+.header-part-one {
+    height: 60px;
+    background-color: #485769;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-part-one .back-to-top {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Second Part */
+.header-part-two {
+    height: 350px;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+}
+
+.header-part-two .column {
+    width: 20%;
+    text-align: left;
+}
+
+.header-part-two h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.header-part-two p{
+    font-size: 14px;
+    color: #dddddd;
+    line-height: 30px;
+
+}
+
+/* Third Part */
+.header-third-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232F3E;
+    position: relative;
+    height: 100px;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Thin top line */
+    gap: 10px;
+}
+
+
+
+/* Amazon Logo */
+.amazon-logo{
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+.amazon-logo img {
+    width: 100px;
+    height: 50px;
+    
+
+}
+
+/* Language Selector */
+.language-selector1 {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content:center;
+    gap: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+.language-selector1 .fa-solid {
+    height: 10px;
+    width: 10px;
+    color: white;
+    padding-right: 10px;
+    padding-bottom: 8px;
+}
+.language-selector1 .text {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+/* Currency Selector */
+.currency-selector {
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+
+}
+.currency-selector .dollar-sign {
+    font-size: 18px;
+    color: white;
+    margin-right: 5px
+}
+.currency-selector .text {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+/* Country Selector */
+.country-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    height: 35px;
+    width: 120px;
+}
+.country-selector .flag-icon {
+    width: 15px; /* Adjust based on design */
+    height: 15px;
+    background-image: url('us.png'); /* Replace with actual flag image */
+    background-size: cover;
+    margin-right: 5px;
+}
+.country-selector .text {
+    font-size: 13px;
+    color:#cccccc;
+}
+
+
+
+/* Fourth Part */
+.header-part-four {
+    height: 450px;
+    background-color: #131A22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header-fourth-part {
+    background-color: #131A22;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-gap: 10px;
+    padding: 20px;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Optional thin line */
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border for each section */
+    padding: 10px;
+}
+
+.section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content:center;
+    background-color: #131A22;
+    color: #DDD;
+    padding: 10px 100px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 2px;
+    
+}
+
+.footer-column p {
+    margin: 25px 10px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.footer-column strong {
+    color: #dddddd;
+    
+    
+}
+
+.footer-terms {
+    text-align: center;
+    background-color: #131A22;
+    color: #DDD;
+    font-size: 11px;
+    padding: 5px 0;
+    
+}
+
+.footer-terms p:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-terms span {
+    white-space: nowrap;
+}
+
+.footer-terms p:last-child {
+    margin-top: 0;
+}
+
